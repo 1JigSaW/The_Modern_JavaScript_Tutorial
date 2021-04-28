@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		function readNumber() {
+			let num = +prompt('Input number', 0);
+			while (isNaN(num)) {
+				return readNumber()
+			}
+			alert(num)
+		}
+		readNumber()
+    </script>
+</body>
+</html>
