@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		function filterRange(arr, a, b) {
+			let filtered = [];
+			for (elem of arr) {
+				if (elem <= b && a <= elem) {
+					filtered.push(elem);
+				}	
+			}
+			return filtered;
+		}
+		let arr = [5, 3, 8, 1];
+
+		let filtered = filterRange(arr, 1, 4);
+
+		alert( filtered ); // 3,1 (matching values)
+
+		alert( arr ); // 5,3,8,1 (not modified)
+    </script>
+</body>
+</html>

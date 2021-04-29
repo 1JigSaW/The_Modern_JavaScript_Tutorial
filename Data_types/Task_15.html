@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		function sumInput() {
+			let arr = [];
+
+			while (true) {
+				let val = prompt('Input values', 0);
+				if (val === null || !isFinite(value) || value === "") {
+					break;
+				}
+				arr.push(+val); 
+			}
+			let sum = 0;
+			for (v of arr) {
+				sum += v;
+			}
+			return sum;
+		}
+		alert( sumInput() );
+    </script>
+</body>
+</html>
