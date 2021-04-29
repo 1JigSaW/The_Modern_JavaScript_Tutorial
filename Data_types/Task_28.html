@@ -1,9 +1,24 @@
-function unique(arr) {
-  /* your code */
-}
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		function unique(arr) {
+		  	let result = [];
 
-let strings = ["Hare", "Krishna", "Hare", "Krishna",
-  "Krishna", "Krishna", "Hare", "Hare", ":-O"
-];
+			for (let str of arr) {
+				if (!result.includes(str)) {
+			    	result.push(str);
+			    }
+			}
 
-alert( unique(strings) );
+			return result;
+		}
+
+		let strings = ["Hare", "Krishna", "Hare", "Krishna",
+		  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+		];
+
+		alert( unique(strings) );
+    </script>
+</body>
+</html>
